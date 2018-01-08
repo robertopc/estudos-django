@@ -1,0 +1,481 @@
+
+<!DOCTYPE HTML>
+<html lang="pt-br" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hello World com templates · Estudos Django</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Roberto Pereira da Costa - robertopc.com.br">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-forkmegithub/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="hello-world.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escreva para pesquisar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Capa
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="iniciando.html">
+            
+                <a href="iniciando.html">
+            
+                    
+                    Iniciando
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="instalacao.html">
+            
+                <a href="instalacao.html">
+            
+                    
+                    Instalação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="criar-projeto.html">
+            
+                <a href="criar-projeto.html">
+            
+                    
+                    Criando Projetos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="estrutura-projeto.html">
+            
+                <a href="estrutura-projeto.html">
+            
+                    
+                    Estrutura do projeto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="criar-aplicacao.html">
+            
+                <a href="criar-aplicacao.html">
+            
+                    
+                    Criando Aplicações
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="estrutura-aplicacao.html">
+            
+                <a href="estrutura-aplicacao.html">
+            
+                    
+                    Estrutura da Aplicação
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="mvc-mtv.html">
+            
+                <a href="mvc-mtv.html">
+            
+                    
+                    MVC para MTV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="servidor-dev.html">
+            
+                <a href="servidor-dev.html">
+            
+                    
+                    Servidor de desenvolvimento
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="hello-world.html">
+            
+                <a href="hello-world.html">
+            
+                    
+                    Criando um Hello World
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="hello-world-template.html">
+            
+                <a href="hello-world-template.html">
+            
+                    
+                    Hello World com templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado com GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Hello World com templates</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="criando-um-hello-world-com-templates">Criando um Hello World com templates</h1>
+<p>No exemplo a seguir criaremos um Hello World com arquivos de template. </p>
+<p>Primeiro devemos criar os diret&#xF3;rios <code>static</code> e <code>templates</code> dentro da aplica&#xE7;&#xE3;o.</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> core          <span class="hljs-comment"># diret&#xF3;rio da aplica&#xE7;&#xE3;o</span>
+mkdir static
+mkdir static/css <span class="hljs-comment"># diret&#xF3;rio para css</span>
+mkdir static/js  <span class="hljs-comment"># diret&#xF3;rio para js</span>
+mkdir templates
+</code></pre>
+<p>Criaremos 3 arquivos: 2 est&#xE1;ticos(css e js) e 1 template(html).</p>
+<p><strong>base.html</strong> em <code>templates/</code></p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container-h1&quot;</span>&gt;</span>Hello World<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Nota: base.html &#xE9; uma conven&#xE7;&#xE3;o de nome.</p>
+</blockquote>
+<p><strong>custom.css</strong> em <code>static/css/</code></p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ccc</span>;
+}
+
+<span class="hljs-selector-id">#container</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">33%</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">33%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">33%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">33%</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">#000</span> <span class="hljs-number">1px</span> solid;
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">vertical-align</span>: center;
+}
+</code></pre>
+<p><strong>custom.js</strong> em <code>static/js/</code></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">horaAgora</span>(<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-keyword">var</span> horas = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getHours();
+    <span class="hljs-keyword">var</span> minutos = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getMinutes();
+        minutos = minutos &lt; <span class="hljs-number">10</span> ? <span class="hljs-string">&apos;0&apos;</span> + minutos : minutos ;
+    <span class="hljs-keyword">var</span> segundos = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getSeconds();
+    <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#container-h1 span&apos;</span>).innerHTML = horas + <span class="hljs-string">&apos;:&apos;</span> + minutos + <span class="hljs-string">&apos;:&apos;</span> + segundos;
+}
+
+setInterval(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+    horaAgora();
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<p>Com estes arquivos somos capazes de criar a estrutura de templates do Django. Agora vamos editar o <code>base.html</code> para ele ler os arquivos est&#xE1;ticos.
+O c&#xF3;digo a seguir &#xE9; o arquivo editado com as <code>template tags</code> do Django.</p>
+<pre><code class="lang-html">{% load staticfiles %}
+<span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &quot;</span><span class="hljs-string">css</span>/<span class="hljs-attr">custom.css</span>&quot; %}&quot; <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container-h1&quot;</span>&gt;</span>Hello World<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{% static &quot;</span><span class="hljs-string">js</span>/<span class="hljs-attr">custom.js</span>&quot; %}&quot;&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Pra finalizar modificaremos a <code>views.py</code> da aplica&#xE7;&#xE3;o com o c&#xF3;digo.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">home</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;base.html&apos;</span>)
+</code></pre>
+<p>Agora &#xE9; s&#xF3; rodar o servidor e ver o resultado!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hello-world.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Criando um Hello World">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hello World com templates","level":"1.8.1","depth":2,"previous":{"title":"Criando um Hello World","level":"1.8","depth":1,"path":"chapters/hello-world.md","ref":"chapters/hello-world.md","articles":[{"title":"Hello World com templates","level":"1.8.1","depth":2,"path":"chapters/hello-world-template.md","ref":"chapters/hello-world-template.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/hello-world-template.md","mtime":"2018-01-08T14:44:52.870Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T19:25:14.640Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-forkmegithub/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

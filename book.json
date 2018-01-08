@@ -1,0 +1,33 @@
+{
+  "title": "Estudos Django",
+  "description": "",
+  "author": "Roberto Pereira da Costa - robertopc.com.br",
+  "language": "pt-br",
+  "isbn": "",
+  "direction": "ltr",
+  "plugins": [
+    "github-buttons",
+    "forkmegithub"
+  ],
+  "pluginsConfig": {
+    "github-buttons": {
+      "buttons": [{
+        "user": "robertopc",
+        "repo": "estudos-django",
+        "type": "star",
+        "size": "small"
+      }, {
+        "user": "robertopc",
+        "type": "follow",
+        "width": "160",
+        "count": true,
+        "size": "small"
+      }]
+    },
+    "forkmegithub": {
+      "url": "https://github.com/robertopc/estudos-django",
+      "color": "green",
+      "_comment": "dgray,darkblue,red,orange,green"
+    }
+  }
+}
