@@ -7,7 +7,8 @@
   "direction": "ltr",
   "plugins": [
     "github-buttons",
-    "forkmegithub"
+    "forkmegithub",
+    "edit-link"
   ],
   "pluginsConfig": {
     "github-buttons": {
@@ -28,6 +29,10 @@
       "url": "https://github.com/robertopc/estudos-django",
       "color": "green",
       "_comment": "dgray,darkblue,red,orange,green"
+    },
+    "edit-link": {
+        "base": "https://github.com/robertopc/estudos-django/edit/master/chapters",
+        "label": "Editar esta página"
     }
   }
 }
