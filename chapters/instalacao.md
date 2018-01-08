@@ -1,6 +1,6 @@
 # Instalação                                                        
 
-Para instalar o Django utilize o `pip` e execute o seguinte comando.
+Para instalar o Django utilize o `pip` e execute o seguinte comando no terminal.
 
 ```
 pip install django
