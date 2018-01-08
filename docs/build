@@ -3,4 +3,4 @@
 gitbook build . docs
 git add docs/
 git commit -m "Build docs"
-
+git push
