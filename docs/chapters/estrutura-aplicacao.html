@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Servidor de desenvolvimento · Estudos Django</title>
+        <title>Estrutura da Aplicação · Estudos Django</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -62,10 +62,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="hello-world.html" />
+    <link rel="next" href="mvc-mtv.html" />
     
     
-    <link rel="prev" href="mvc-mtv.html" />
+    <link rel="prev" href="criar-aplicacao.html" />
     
 
     <style>
@@ -184,7 +184,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="estrutura-aplicacao.html">
+        <li class="chapter active" data-level="1.6.1" data-path="estrutura-aplicacao.html">
             
                 <a href="estrutura-aplicacao.html">
             
@@ -215,7 +215,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="servidor-dev.html">
+        <li class="chapter " data-level="1.7" data-path="servidor-dev.html">
             
                 <a href="servidor-dev.html">
             
@@ -290,7 +290,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Servidor de desenvolvimento</a>
+        <a href=".." >Estrutura da Aplicação</a>
     </h1>
 </div>
 
@@ -305,11 +305,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="servidor-de-desenvolvimento">Servidor de desenvolvimento</h1>
-<p>Para desenvolvermos subimos um servidor local de desenvolvimento pelo terminal.
-Atrav&#xE9;s do comando a seguir.</p>
-<pre><code>python manage.py runserver
-</code></pre><p>Este comando gerar&#xE1; uma url para visualizarmos no navegador, geralmente com o endere&#xE7;o <code>http://127.0.0.1:8000</code> ou <code>http://localhost:8000</code>.</p>
+                                <h1 id="estrutura-da-aplica&#xE7;&#xE3;o">Estrutura da Aplica&#xE7;&#xE3;o</h1>
+<p>Ao criarmos a aplica&#xE7;&#xE3;o, &#xE9; gerada a estrutura padr&#xE3;o a seguir.</p>
+<pre><code>__init__.py  
+admin.py  
+apps.py  
+migrations/
+    __init__.py
+models.py  
+tests.py  
+views.py
+</code></pre><h3 id="initpy">__init__.py</h3>
+<p>O mesmo que o __ini__.py do Projeto<a href="#initpy">&#xB9;</a>.</p>
+<h3 id="adminpy">admin.py</h3>
+<p>Este arquivo cont&#xE9;m os modelos para o backend desta aplica&#xE7;&#xE3;o.</p>
+<h3 id="appspy">apps.py</h3>
+<p>Este arquivo descreve configura&#xE7;&#xF5;es da aplica&#xE7;&#xE3;o.</p>
+<h3 id="migrations">migrations/</h3>
+<p>Diret&#xF3;rio contendo as migra&#xE7;&#xF5;es para o banco de dados, ou seja, um versionamento do banco de dados feito pelo ORM.</p>
+<h3 id="modelspy">models.py</h3>
+<p>Este arquivo cont&#xE9;m os modelos de dados da aplica&#xE7;&#xE3;o. As classes deste arquivo s&#xE3;o usadas pelo ORM para criar a estruturas de dados do banco de dados.</p>
+<h3 id="testspy">tests.py</h3>
+<p>Este &#xE9; o arquivo onde devem ser escritos os testes da aplica&#xE7;&#xE3;o.</p>
+<h3 id="viewspy">views.py</h3>
+<p>Este &#xE9; o arquivo controlador da aplica&#xE7;&#xE3;o, ele faz a interface entre os modelos e os templates.</p>
 
                                 
                                 </section>
@@ -337,12 +356,12 @@ Atrav&#xE9;s do comando a seguir.</p>
 
             
                 
-                <a href="mvc-mtv.html" class="navigation navigation-prev " aria-label="Previous page: MVC para MTV">
+                <a href="criar-aplicacao.html" class="navigation navigation-prev " aria-label="Previous page: Criando Aplicações">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="hello-world.html" class="navigation navigation-next " aria-label="Next page: Criando um Hello World">
+                <a href="mvc-mtv.html" class="navigation navigation-next " aria-label="Next page: MVC para MTV">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -353,7 +372,7 @@ Atrav&#xE9;s do comando a seguir.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Servidor de desenvolvimento","level":"1.7","depth":1,"next":{"title":"Criando um Hello World","level":"1.8","depth":1,"path":"chapters/hello-world.md","ref":"chapters/hello-world.md","articles":[{"title":"Hello World com templates","level":"1.8.1","depth":2,"path":"chapters/hello-world-template.md","ref":"chapters/hello-world-template.md","articles":[]}]},"previous":{"title":"MVC para MTV","level":"1.6.2","depth":2,"path":"chapters/mvc-mtv.md","ref":"chapters/mvc-mtv.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Editar esta página","base":"https://github.com/robertopc/estudos-django/edit/master/chapters"},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/servidor-dev.md","mtime":"2018-01-08T14:43:52.414Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T20:08:42.347Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Estrutura da Aplicação","level":"1.6.1","depth":2,"next":{"title":"MVC para MTV","level":"1.6.2","depth":2,"path":"chapters/mvc-mtv.md","ref":"chapters/mvc-mtv.md","articles":[]},"previous":{"title":"Criando Aplicações","level":"1.6","depth":1,"path":"chapters/criar-aplicacao.md","ref":"chapters/criar-aplicacao.md","articles":[{"title":"Estrutura da Aplicação","level":"1.6.1","depth":2,"path":"chapters/estrutura-aplicacao.md","ref":"chapters/estrutura-aplicacao.md","articles":[]},{"title":"MVC para MTV","level":"1.6.2","depth":2,"path":"chapters/mvc-mtv.md","ref":"chapters/mvc-mtv.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Editar esta página","base":"https://github.com/robertopc/estudos-django/edit/master/chapters"},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/estrutura-aplicacao.md","mtime":"2018-01-08T14:42:09.317Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T21:13:20.113Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -372,10 +391,6 @@ Atrav&#xE9;s do comando a seguir.</p>
     
         
         <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

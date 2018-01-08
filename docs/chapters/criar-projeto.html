@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Estrutura da Aplicação · Estudos Django</title>
+        <title>Criando Projetos · Estudos Django</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -62,10 +62,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mvc-mtv.html" />
+    <link rel="next" href="estrutura-projeto.html" />
     
     
-    <link rel="prev" href="criar-aplicacao.html" />
+    <link rel="prev" href="instalacao.html" />
     
 
     <style>
@@ -144,7 +144,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="criar-projeto.html">
+        <li class="chapter active" data-level="1.4" data-path="criar-projeto.html">
             
                 <a href="criar-projeto.html">
             
@@ -184,7 +184,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="estrutura-aplicacao.html">
+        <li class="chapter " data-level="1.6.1" data-path="estrutura-aplicacao.html">
             
                 <a href="estrutura-aplicacao.html">
             
@@ -290,7 +290,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Estrutura da Aplicação</a>
+        <a href=".." >Criando Projetos</a>
     </h1>
 </div>
 
@@ -305,30 +305,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="estrutura-da-aplica&#xE7;&#xE3;o">Estrutura da Aplica&#xE7;&#xE3;o</h1>
-<p>Ao criarmos a aplica&#xE7;&#xE3;o, &#xE9; gerada a estrutura padr&#xE3;o a seguir.</p>
-<pre><code>__init__.py  
-admin.py  
-apps.py  
-migrations/
-    __init__.py
-models.py  
-tests.py  
-views.py
-</code></pre><h3 id="initpy">__init__.py</h3>
-<p>O mesmo que o __ini__.py do Projeto<a href="#initpy">&#xB9;</a>.</p>
-<h3 id="adminpy">admin.py</h3>
-<p>Este arquivo cont&#xE9;m os modelos para o backend desta aplica&#xE7;&#xE3;o.</p>
-<h3 id="appspy">apps.py</h3>
-<p>Este arquivo descreve configura&#xE7;&#xF5;es da aplica&#xE7;&#xE3;o.</p>
-<h3 id="migrations">migrations/</h3>
-<p>Diret&#xF3;rio contendo as migra&#xE7;&#xF5;es para o banco de dados, ou seja, um versionamento do banco de dados feito pelo ORM.</p>
-<h3 id="modelspy">models.py</h3>
-<p>Este arquivo cont&#xE9;m os modelos de dados da aplica&#xE7;&#xE3;o. As classes deste arquivo s&#xE3;o usadas pelo ORM para criar a estruturas de dados do banco de dados.</p>
-<h3 id="testspy">tests.py</h3>
-<p>Este &#xE9; o arquivo onde devem ser escritos os testes da aplica&#xE7;&#xE3;o.</p>
-<h3 id="viewspy">views.py</h3>
-<p>Este &#xE9; o arquivo controlador da aplica&#xE7;&#xE3;o, ele faz a interface entre os modelos e os templates.</p>
+                                <h1 id="criando-o-projeto">Criando o projeto</h1>
+<p>Para criar o projeto Django, utilizamos o comando <code>django-admin</code> no terminal. Ele cria o projeto no diret&#xF3;rio atual. Abaixo segue o c&#xF3;digo de cria&#xE7;&#xE3;o.</p>
+<pre><code class="lang-sh">django-admin startproject nomedoprojeto .
+</code></pre>
+<p>Ao inserir o ponto no fim dizemos para instalar o manage.py no mesmo n&#xED;vel do diret&#xF3;rio atual.
+Podemos criar sem o ponto, por&#xE9;m criar&#xE1; um diret&#xF3;rio &apos;nomedoprojeto&apos; e dentro o manage.py e outro diret&#xF3;rio &apos;nomedoprojeto&apos; </p>
 
                                 
                                 </section>
@@ -356,12 +338,12 @@ views.py
 
             
                 
-                <a href="criar-aplicacao.html" class="navigation navigation-prev " aria-label="Previous page: Criando Aplicações">
+                <a href="instalacao.html" class="navigation navigation-prev " aria-label="Previous page: Instalação">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mvc-mtv.html" class="navigation navigation-next " aria-label="Next page: MVC para MTV">
+                <a href="estrutura-projeto.html" class="navigation navigation-next " aria-label="Next page: Estrutura do projeto">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -372,7 +354,7 @@ views.py
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Estrutura da Aplicação","level":"1.6.1","depth":2,"next":{"title":"MVC para MTV","level":"1.6.2","depth":2,"path":"chapters/mvc-mtv.md","ref":"chapters/mvc-mtv.md","articles":[]},"previous":{"title":"Criando Aplicações","level":"1.6","depth":1,"path":"chapters/criar-aplicacao.md","ref":"chapters/criar-aplicacao.md","articles":[{"title":"Estrutura da Aplicação","level":"1.6.1","depth":2,"path":"chapters/estrutura-aplicacao.md","ref":"chapters/estrutura-aplicacao.md","articles":[]},{"title":"MVC para MTV","level":"1.6.2","depth":2,"path":"chapters/mvc-mtv.md","ref":"chapters/mvc-mtv.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Editar esta página","base":"https://github.com/robertopc/estudos-django/edit/master/chapters"},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/estrutura-aplicacao.md","mtime":"2018-01-08T14:42:09.317Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T20:08:42.347Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Criando Projetos","level":"1.4","depth":1,"next":{"title":"Estrutura do projeto","level":"1.5","depth":1,"path":"chapters/estrutura-projeto.md","ref":"chapters/estrutura-projeto.md","articles":[]},"previous":{"title":"Instalação","level":"1.3","depth":1,"path":"chapters/instalacao.md","ref":"chapters/instalacao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Editar esta página","base":"https://github.com/robertopc/estudos-django/edit/master/chapters"},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/criar-projeto.md","mtime":"2018-01-08T14:36:26.075Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-08T21:13:20.113Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -391,10 +373,6 @@ views.py
     
         
         <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
