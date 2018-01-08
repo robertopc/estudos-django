@@ -31,7 +31,7 @@
       "_comment": "dgray,darkblue,red,orange,green"
     },
     "edit-link": {
-        "base": "https://github.com/robertopc/estudos-django/edit/master/chapters",
+        "base": "https://github.com/robertopc/estudos-django/edit/master",
         "label": "Editar esta página"
     }
   }
