@@ -8,7 +8,8 @@
   "plugins": [
     "github-buttons",
     "forkmegithub",
-    "edit-link"
+    "edit-link",
+    "disqus"
   ],
   "pluginsConfig": {
     "github-buttons": {
@@ -33,6 +34,9 @@
     "edit-link": {
         "base": "https://github.com/robertopc/estudos-django/edit/master",
         "label": "Editar esta página"
+    },
+    "disqus": {
+      "shortName": "robertopc"
     }
   }
 }
