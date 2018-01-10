@@ -11,4 +11,12 @@
 * [Servidor de desenvolvimento](chapters/servidor-dev.md)
 * [Criando um Hello World](chapters/hello-world.md)
     * [Hello World com templates](chapters/hello-world-template.md)
+* [Models](chapters/models.md)
+  * [Relacionamentos*](chapters/models-relacionamentos.md)
+    * [Muitos pra um*](chapters/models-relacionamentos-muitos-pra-um.md)
+    * [Muitos pra muitos*](chapters/models-relacionamentos-muitos-pra-muitos.md)
+    * [Um pra um*](chapters/models-relacionamentos-um-pra-um.md)
+* [Aplicação de Exemplo Tarefas](chapters/app-tarefas.md)
+  * [Estrutura de dados](chapters/app-tarefas-estrutura.md)
+* [Referências](REFERENCIAS.md)
 
