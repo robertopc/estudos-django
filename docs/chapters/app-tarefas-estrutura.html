@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>MVC para MTV · Estudos Django</title>
+        <title>Estrutura de dados · Estudos Django</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -66,10 +66,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="servidor-dev.html" />
+    <link rel="next" href="../REFERENCIAS.html" />
     
     
-    <link rel="prev" href="estrutura-aplicacao.html" />
+    <link rel="prev" href="app-tarefas.html" />
     
 
     <style>
@@ -201,7 +201,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="mvc-mtv.html">
+        <li class="chapter " data-level="1.6.2" data-path="mvc-mtv.html">
             
                 <a href="mvc-mtv.html">
             
@@ -291,7 +291,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.10.1" data-path="app-tarefas-estrutura.html">
+        <li class="chapter active" data-level="1.10.1" data-path="app-tarefas-estrutura.html">
             
                 <a href="app-tarefas-estrutura.html">
             
@@ -352,7 +352,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >MVC para MTV</a>
+        <a href=".." >Estrutura de dados</a>
     </h1>
 </div>
 
@@ -367,27 +367,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="padr&#xE3;o-mvc-para-mtv">Padr&#xE3;o MVC para MTV</h2>
-<p>O Django utiliza o padr&#xE3;o de projeto MTV(Model, Template, View). Possui o mesmo conceito que o MVC, por&#xE9;m o <code>Template = View</code> e <code>View = Control</code>.</p>
+                                <h1 id="estrutura-de-dados">Estrutura de dados</h1>
+<p>A estrutura de dados da aplica&#xE7;&#xE3;o, ser&#xE1; de duas classes(models): Categoria e Tarefa.<br>
+Na tabela abaixo podemos ver as classes e seus atributos.</p>
 <table>
 <thead>
 <tr>
-<th>MVC</th>
-<th>MTV</th>
+<th>Classe</th>
+<th>Atributos</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Model</td>
-<td>Model</td>
+<td>Categoria</td>
+<td>nome, descri&#xE7;&#xE3;o</td>
 </tr>
 <tr>
-<td>View</td>
-<td>Template</td>
-</tr>
-<tr>
-<td>Control</td>
-<td>View</td>
+<td>Tarefa</td>
+<td>nome, descri&#xE7;&#xE3;o, data final, prioridade, categoria e usu&#xE1;rio</td>
 </tr>
 </tbody>
 </table>
@@ -418,12 +415,12 @@
 
             
                 
-                <a href="estrutura-aplicacao.html" class="navigation navigation-prev " aria-label="Previous page: Estrutura da Aplicação">
+                <a href="app-tarefas.html" class="navigation navigation-prev " aria-label="Previous page: Aplicação de Exemplo Tarefas">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="servidor-dev.html" class="navigation navigation-next " aria-label="Next page: Servidor de desenvolvimento">
+                <a href="../REFERENCIAS.html" class="navigation navigation-next " aria-label="Next page: Referências">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -434,7 +431,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MVC para MTV","level":"1.6.2","depth":2,"next":{"title":"Servidor de desenvolvimento","level":"1.7","depth":1,"path":"chapters/servidor-dev.md","ref":"chapters/servidor-dev.md","articles":[]},"previous":{"title":"Estrutura da Aplicação","level":"1.6.1","depth":2,"path":"chapters/estrutura-aplicacao.md","ref":"chapters/estrutura-aplicacao.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","edit-link","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"robertopc"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Editar esta página","base":"https://github.com/robertopc/estudos-django/edit/master"},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/mvc-mtv.md","mtime":"2018-01-08T14:43:08.860Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-10T00:04:14.551Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Estrutura de dados","level":"1.10.1","depth":2,"next":{"title":"Referências","level":"1.11","depth":1,"path":"REFERENCIAS.md","ref":"REFERENCIAS.md","articles":[]},"previous":{"title":"Aplicação de Exemplo Tarefas","level":"1.10","depth":1,"path":"chapters/app-tarefas.md","ref":"chapters/app-tarefas.md","articles":[{"title":"Estrutura de dados","level":"1.10.1","depth":2,"path":"chapters/app-tarefas-estrutura.md","ref":"chapters/app-tarefas-estrutura.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github-buttons","forkmegithub","edit-link","disqus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"robertopc"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"robertopc","repo":"estudos-django","type":"star","size":"small"},{"user":"robertopc","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Editar esta página","base":"https://github.com/robertopc/estudos-django/edit/master"},"forkmegithub":{"color":"green","url":"https://github.com/robertopc/estudos-django","_comment":"dgray,darkblue,red,orange,green"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Roberto Pereira da Costa - robertopc.com.br","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Estudos Django","language":"pt-br","gitbook":"*","description":"","direction":"ltr"},"file":{"path":"chapters/app-tarefas-estrutura.md","mtime":"2018-01-09T22:08:16.702Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-10T00:04:14.551Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
