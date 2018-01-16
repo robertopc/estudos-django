@@ -6,7 +6,7 @@ Ao criar o projeto, o Django possui a seguinte estrutura.
 __init__.py
 settings.py
 urls.py
-wsgi.p
+wsgi.py
 ```
 
 ## __init__.py
@@ -25,7 +25,7 @@ TIME_ZONE = 'UTC' # mudar para America/Sao_Paulo
 
 INSTALLED_APPS = [
 ... # lista com as aplicações instaladas
-'nomedoprojeto.nomedaaplicacao', # adicionar as aplicações criadas dessa maneira
+'projeto.aplicacao', # adicionar as aplicações criadas dessa maneira
 ]
 ```
 ## urls.py
